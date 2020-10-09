@@ -1,0 +1,12 @@
+.nav-link {
+    padding: .3rem 1rem!important;
+}
+
+.form-control {
+    height: calc(2rem + 2px) !important;
+}
+
+.btn {
+    padding: .3rem .6rem!important;
+    font-size: .9rem!important;
+}
