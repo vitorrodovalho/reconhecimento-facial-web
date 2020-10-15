@@ -3,16 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreProductRequest;
+use App\Models\Product;
 use App\Models\ProductGroups;
-use App\Models\Products;
 use Illuminate\Http\Request;
-use function PHPUnit\Framework\isNull;
 
 class ProductsController extends Controller
 {
     public function index(Request $request)
     {
-        $products = Products::all()->sortByDesc('id');
+        $products = Product::all()->sortByDesc('id');
         $message = $request->session()->get('message');
         return view('products.index', compact('products', 'message'));
     }
@@ -26,7 +25,7 @@ class ProductsController extends Controller
 
     public function show($id)
     {
-        $product = Products::find($id);
+        $product = Product::find($id);
         $productGroups = ProductGroups::pluck('code', 'id');
         $packaging = ProductGroups::pluck('code', 'id');
         return View('products.create', compact('productGroups', 'packaging', 'product'));
@@ -34,7 +33,7 @@ class ProductsController extends Controller
 
     public function edit($id)
     {
-        $product = Products::find($id);
+        $product = Product::find($id);
         $productGroups = ProductGroups::pluck('code', 'id');
         $packaging = ProductGroups::pluck('code', 'id');
         return View('products.create', compact('productGroups', 'packaging', 'product'));
@@ -43,7 +42,7 @@ class ProductsController extends Controller
     public function store(StoreProductRequest $request)
     {
         try {
-            Products::create($request->all());
+            Product::create($request->all());
             $request->session()->flash('message', "success");
             return redirect()->route('products.index');
         } catch (\Exception $e) {
@@ -54,7 +53,7 @@ class ProductsController extends Controller
     public function update(StoreProductRequest $request, $id)
     {
         try {
-            $product = Products::where('id', '=', $id)->first();
+            $product = Product::where('id', '=', $id)->first();
             $product->update($request->all());
             $request->session()->flash('message', "success_edit");
             return redirect()->route('products.index');
@@ -66,7 +65,7 @@ class ProductsController extends Controller
     public function destroy($id)
     {
         try {
-            $delete = Products::where('id', $id)->delete();
+            $delete = Product::where('id', $id)->delete();
             $delete ? $status = true : $status = false;
             return response()->json(['success' => $status]);
         } catch (\Exception $e) {

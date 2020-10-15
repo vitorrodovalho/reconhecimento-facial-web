@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Companies;
+use App\Models\Company;
 use App\Http\Requests\StoreCompanyRequest;
 use App\Models\Products;
 use Illuminate\Http\Request;
@@ -11,7 +11,7 @@ class CompaniesController extends Controller
 {
     public function index(Request $request)
     {
-        $companies = Companies::all('id', 'name', 'nickname', 'cnpj', 'currency', 'language')->sortByDesc('id');
+        $companies = Company::all('id', 'name', 'nickname', 'cnpj', 'currency', 'language')->sortByDesc('id');
         $message = $request->session()->get('message');
         return view('companies.index', compact('companies', 'message'));
     }
@@ -24,7 +24,7 @@ class CompaniesController extends Controller
     public function store(StoreCompanyRequest $request)
     {
         try {
-            Companies::create($request->all());
+            Company::create($request->all());
             $request->session()->flash('message', "success");
         } catch (Exception $exception) {
             $request->session()->flash('message', $exception->getMessage());
@@ -35,7 +35,7 @@ class CompaniesController extends Controller
     public function destroy($id)
     {
         try {
-            $delete = Companies::where('id', $id)->delete();
+            $delete = Company::where('id', $id)->delete();
             $delete ? $status = true : $status = false;
             return response()->json(['success' => $status]);
         } catch (\Exception $e) {

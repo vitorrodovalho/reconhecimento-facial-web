@@ -3,8 +3,53 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbb07007-3a2e-454b-b574-ce9d9b57879c" name="Default Changelist" comment="" />
+    <list default="true" id="dbb07007-3a2e-454b-b574-ce9d9b57879c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControlAreasController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InventoriesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LabelsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModelsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PrintersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductGroupsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReadersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AcessGroup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Companies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ControlAreas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Inventories.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Labels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Models.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Packaging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Printers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ProductGroups.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Products.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Readers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +60,9 @@
     <execution>
       <interpreter composer="composer" />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -153,7 +201,7 @@
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/pt-br" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -209,11 +257,30 @@
       <workItem from="1602177523385" duration="178000" />
       <workItem from="1602177715586" duration="12490000" />
       <workItem from="1602242176938" duration="1754000" />
+      <workItem from="1602255307197" duration="1630000" />
+      <workItem from="1602588400808" duration="1261000" />
+      <workItem from="1602619504057" duration="2000" />
+      <workItem from="1602620684180" duration="5000" />
+      <workItem from="1602694724726" duration="3987000" />
+      <workItem from="1602771853987" duration="1686000" />
+      <workItem from="1602779950167" duration="3376000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="203" key="#Inspections" timestamp="1602010281948">
@@ -232,6 +299,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="739" y="230" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1601646752351" />
+    <state x="705" y="290" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602255436782">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="705" y="290" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1602255436782" />
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602096519484">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -176,7 +176,6 @@
             }).then(function (e) {
                 if (e.value === true) {
                     var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
-                    console.log(CSRF_TOKEN);
                     $.ajax({
                         type: 'DELETE',
                         url: "@yield('link')" + '/' + id,
