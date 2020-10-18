@@ -23,32 +23,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbb07007-3a2e-454b-b574-ce9d9b57879c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/viaondaweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/viaondaweb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControlAreasController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InventoriesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LabelsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModelsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PrintersController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductGroupsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReadersController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/AcessGroup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Companies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/ControlAreas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Inventories.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Labels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Models.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Packaging.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Printers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/ProductGroups.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Products.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Readers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreCompanyRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreProductGroupRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreProductRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_000001_create_companies_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_000002_create_access_group_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_000003_create_group_product_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_000004_create_readers_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_110000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_112715_create_products_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_112733_create_control_area_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_112750_create_stored_control_area_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_112849_create_tag_movto_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_112947_create_models_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113012_create_licenses_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113020_create_orders_header_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113045_create_orders_detail_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113057_create_orders_detail_epc_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113132_create_printers_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113158_create_receipt_orders_header_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113159_create_receipt_orders_detail_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113211_create_receipt_orders_detail_epc_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113300_create_epc_cross_ref_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113324_create_change_password_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113401_create_currency_conversion_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_113512_create_labels_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_144125_create_access_roles_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_144201_create_log_tag_printer_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_144409_create_inventorys_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_144431_create_inventory_count_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_144445_create_inventory_local_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_144509_create_control_washes_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_144730_create_settings_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_06_184649_create_packagings_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_06_184737_create_currencies_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pt-br/actions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pt-br/buttons.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pt-br/fields.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pt-br/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pt-br/messages.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pt-br/titles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/companies/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/companies/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usuarios/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usuarios/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,25 +235,31 @@
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources\lang\pt-br" />
-      <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources\views" />
-      <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\app\Http\Controllers" />
-      <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\app" />
-      <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\app\Http\Requests" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\app\Models" />
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources\lang\pt-br" />
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\public\vendor\adminlte\dist\img" />
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources\img" />
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\database\migrations" />
+      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\resources\views" />
+      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\app\Http\Controllers" />
+      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\app\Models" />
+      <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources\lang\pt-br" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.CompaniesController.php">
@@ -264,11 +304,15 @@
       <workItem from="1602694724726" duration="3987000" />
       <workItem from="1602771853987" duration="1686000" />
       <workItem from="1602779950167" duration="3376000" />
+      <workItem from="1603032339847" duration="6037000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -311,10 +355,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="718" y="248" key="NewPhpClassDialog/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1601995036709" />
-    <state x="617" y="140" width="998" height="708" key="SettingsEditor" timestamp="1602184553597">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="263" y="113" width="998" height="708" key="SettingsEditor" timestamp="1603036235641">
+      <screen x="0" y="0" width="2560" height="1050" />
     </state>
     <state x="617" y="140" width="998" height="708" key="SettingsEditor/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1602184553597" />
+    <state x="263" y="113" key="SettingsEditor/0.0.2560.1050@0.0.2560.1050" timestamp="1603036235641" />
     <state x="-1508" y="34" width="1514" height="1037" maximized="true" key="dock-window-1" timestamp="1601637532213">
       <screen x="-1680" y="34" width="1680" height="1020" />
     </state>

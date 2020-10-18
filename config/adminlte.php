@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'ViaOnda',
+    'title' => 'Reconhecimento Facial',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>ViaOnda</b> Front End',
+    'logo' => '<b>Reconhecimento</b> Facial',
     'logo_img' => 'vendor/adminlte/dist/img/viaonda.png',
     //'logo_img' => 'resources/img/viaonda.png',
     'logo_img_class' => 'brand-image',
@@ -233,220 +233,35 @@ return [
 
     'menu' => [
         [
-            'text' => 'search',
-            'search' => true,
-            'topnav' => true,
+            'text' => 'Dashboard',
+            'url'  => '/',
+            'icon'  => 'fas fa-tachometer-alt',
         ],
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        ['header' => 'registrations'],
-        [
-            'text' => 'products',
-            'url'  => 'products',
-            'active' => ['products*'],
-            'icon' => 'fas fa-cube',
-            'submenu' => [
-                [
-                    'text' => 'products',
-                    'url'  => 'products',
-                    'active' => ['products*'],
-                ],
-                [
-                    'text' => 'groups',
-                    'url'  => 'product_groups',
-                    'active' => ['product_groups*'],
-                ],
-                [
-                    'text' => 'packaging',
-                    'url'  => 'packaging',
-                    'active' => ['packaging*'],
-                ],
-                [
-                    'text' => 'coins',
-                    'url'  => 'coins',
-                    'active' => ['packaging*'],
-                ],
-                [
-                    'text' => 'cross_reference',
-                    'url'  => 'cross_reference',
-                    'active' => ['cross_reference*'],
-                ],
-            ],
+            'header' => 'CADASTROS',
         ],
         [
-            'text' => 'access_control',
-            'url'  => 'access_control',
-            'icon' => 'fas fa-user-shield',
-            'submenu' => [
-                [
-                    'text' => 'peoples',
-                    'url'  => 'peoples',
-                    'active' => ['peoples*'],
-                ],
-                [
-                    'text' => 'students',
-                    'url'  => 'students',
-                    'active' => ['students*'],
-                ],
-                [
-                    'text' => 'access_permissions',
-                    'url'  => 'access_permissions',
-                    'active' => ['access_permissions*'],
-                ],
-                [
-                    'text' => 'shifts',
-                    'url'  => 'shifts',
-                    'active' => ['shifts*'],
-                ],
-            ],
+            'text'  => 'Turnos',
+            'url'   => 'turnos',
+            'icon'  => 'far fa-clock',
         ],
         [
-            'text' => 'readers',
-            'url'  => 'readers',
-            'icon' => 'fas fa-rss',
-            'submenu' => [
-                [
-                    'text' => 'readers',
-                    'url'  => 'readers',
-                    'active' => ['readers*'],
-                ],
-                [
-                    'text' => 'models',
-                    'url'  => 'models',
-                    'active' => ['models*'],
-                ],
-                [
-                    'text' => 'locations',
-                    'url'  => 'locations',
-                    'active' => ['locations*'],
-                ],
-            ],
+            'text'  => 'Departamentos',
+            'url'   => 'departamentos',
+            'icon'  => 'fas fa-users',
         ],
         [
-            'text' => 'locations',
-            'url'  => 'locations',
-            'icon' => 'fas fa-map-marker-alt',
-            'submenu' => [
-                [
-                    'text' => 'locations',
-                    'url'  => 'locations',
-                    'active' => ['locations*'],
-                ],
-                [
-                    'text' => 'control_area',
-                    'url'  => 'control_areas',
-                    'active' => ['control_areas*'],
-                ],
-            ],
+            'text'  => 'Usuários',
+            'url'   => 'usuarios',
+            'icon'  => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'printers',
-            'url'  => 'printers',
-            'icon' => 'fas fa-print',
-            'submenu' => [
-                [
-                    'text' => 'printers',
-                    'url'  => 'printers',
-                    'active' => ['printers*'],
-                ],
-                [
-                    'text' => 'label_layout',
-                    'url'  => 'label_layout',
-                    'active' => ['label_layout*'],
-                ],
-            ],
+            'header' => 'RELATÓRIOS',
         ],
         [
-            'text' => 'companies',
-            'url'  => 'companies',
-            'active' => ['companies*'],
-            'icon' => 'fas fa-building',
-        ],
-        ['header' => 'operations'],
-        [
-            'text' => 'reading-list',
-            'url'  => 'reading-list',
-            'icon' => 'fas fa-server',
-            'active' => ['reading-list*'],
-        ],
-        [
-            'text' => 'incoming-orders',
-            'url'  => 'incoming-orders',
-            'active' => ['incoming-orders*'],
-            'icon' => 'fas fa-file-upload',
-        ],
-        [
-            'text' => 'exit-orders',
-            'url'  => 'exit-orders',
-            'active' => ['exit-orders*'],
-            'icon' => 'fas fa-file-download',
-        ],
-        [
-            'text' => 'inventory',
-            'url'  => 'inventory',
-            'icon' => 'fas fa-cubes',
-            'submenu' => [
-                [
-                    'text' => 'inventories',
-                    'url'  => 'inventories',
-                    'active' => ['inventories*'],
-                ],
-                [
-                    'text' => 'reading-list',
-                    'url'  => 'reading-list',
-                    'active' => ['reading-list*'],
-                ],
-            ],
-        ],
-        [
-            'text' => 'tag-printing',
-            'url'  => 'tag-printing',
-            'active' => ['tag-printing*'],
-            'icon' => 'fas fa-print',
-        ],
-        ['header' => 'reports'],
-        [
-            'text' => 'washes',
-            'url'  => 'washes',
-            'active' => ['washes*'],
-            'icon' => 'fas fa-soap',
-        ],
-        [
-            'text' => 'real-time-monitor',
-            'url'  => 'real-time-monitor',
-            'icon' => 'fas fa-list',
-        ],
-        ['header' => 'graphics'],
-        [
-            'text' => 'items-by-location',
-            'url'  => 'items-by-location',
-            'icon' => 'fas fa-chart-area',
-        ],
-        [
-            'text' => 'stock',
-            'url'  => 'stock',
-            'icon' => 'fas fa-chart-pie',
-        ],
-        ['header' => 'settings'],
-        [
-            'text' => 'users',
-            'url'  => 'users',
-            'active' => ['users*'],
-            'icon' => 'fas fa-user',
-        ],
-        [
-            'text' => 'general-settings',
-            'url'  => 'general-settings',
-            'icon' => 'fas fa-cog',
-        ],
-        [
-            'text' => 'access-groups',
-            'url'  => 'access-groups',
-            'active' => ['access-groups*'],
-            'icon' => 'fas fa-shield-alt',
+            'text'  => 'Movimentação',
+            'url'   => 'movimentacao',
+            'icon'  => 'fas fa-chart-line',
         ],
     ],
 

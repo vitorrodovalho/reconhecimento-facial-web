@@ -6,11 +6,7 @@
     <div class="card">
         <div class="card-header">
             <div class="btn-group">
-                <a href="@yield('link')/create" class="btn btn-sm btn-primary"><i
-                        class="fas fa-plus"></i> @lang('buttons.add')</a>
-                <a href="@yield('link')/create" class="btn btn-sm btn-primary"><i class="fas fa-file-upload"></i>
-                    Importar</a>
-            </div>
+                <a href="@yield('link')/create" class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Adicionar</a></div>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -18,11 +14,11 @@
                 @push('js')
                     <script>
                         Swal.fire({
-                            title: "@lang('messages.done')",
+                            title: "Sucesso!",
                             @if($message == 'success')
-                                text: "@lang('messages.record_stored')",
+                                text: "Usuário incluído com sucesso.",
                             @elseif($message == 'success_edit')
-                                text: "@lang('messages.record_success_edit')",
+                                text: "Usuário editado com sucesso.",
                             @endif
                             type: "success",
                             showConfirmButton: false,
@@ -35,8 +31,8 @@
                 @push('js')
                     <script>
                         Swal.fire({
-                            title: "@lang('messages.error')",
-                            text: "@lang('messages.record_error_stored') ({{$error}})",
+                            title: "Erro!",
+                            text: "Erro ao inserir usuário. ({{$error}})",
                             type: "error",
                             showConfirmButton: false,
                             timer: 2000
@@ -166,12 +162,12 @@
 
         function deleteConfirmation(id, name) {
             Swal.fire({
-                title: "@lang('messages.delete')",
-                text: "@lang("messages.confirm_delete") '" + name + "' ?",
+                title: "Excluir",
+                text: "Tem certeza que deseja excluir '" + name + "' ?",
                 type: "warning",
                 showCancelButton: !0,
-                confirmButtonText: "@lang('buttons.confirm_delete')",
-                cancelButtonText: "@lang('buttons.cancel_delete')",
+                confirmButtonText: "Excluir",
+                cancelButtonText: "Cancelar",
                 reverseButtons: !0
             }).then(function (e) {
                 if (e.value === true) {
@@ -184,8 +180,8 @@
                         success: function (results) {
                             if (results.success === true) {
                                 Swal.fire({
-                                    title: "@lang('messages.done')",
-                                    text: "@lang('messages.record_destroy')",
+                                    title: "Sucesso",
+                                    text: "Usuário excluído com sucesso!",
                                     type: "success",
                                     showConfirmButton: false,
                                     timer: 2000
@@ -195,8 +191,8 @@
                                 }, 2000);
                             } else {
                                 Swal.fire({
-                                    title: "@lang('messages.error')",
-                                    text: "@lang('messages.record_error_destroy')",
+                                    title: "Erro",
+                                    text: "Erro ao excluir usuário",
                                     type: "error",
                                 });
                             }

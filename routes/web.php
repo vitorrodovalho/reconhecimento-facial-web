@@ -18,8 +18,6 @@ Route::get('/home', function () { return view('dashboard'); });
 
 Route::group(['namespace' => '\App\Http\Controllers'], function() {
     Route::resources([
-        'products' => ProductsController::class,
-        'product_groups' => ProductGroupsController::class,
-        'companies' => CompaniesController::class,
+        'usuarios' => UsuariosController::class,
     ]);
 });

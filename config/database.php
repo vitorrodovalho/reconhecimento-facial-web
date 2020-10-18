@@ -54,26 +54,13 @@ return [
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix' => 'tbl_',
+            'prefix' => '',
             'prefix_indexes' => false,
             'strict' => true,
             'engine' => 'InnoDB',
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
-        ],
-
-        'oracle' => [
-            'driver' => 'oracle',
-            'host' => '192.168.15.23',
-            'port' => '1521',
-            'database' => 'viaondadb',
-            'service_name' => 'XE',
-            'username' => 'viaonda',
-            'password' => 'viaonda2020',
-            'charset' => 'utf8',
-            'prefix' => 'tbl_',
-            'prefix_indexes' => false,
         ],
 
         'pgsql' => [

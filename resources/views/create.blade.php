@@ -5,8 +5,7 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <a class="btn btn-sm btn-secondary" href="@yield('link_cancel')" style="color:white"><i
-                    class="fas fa-ban"></i> @lang('buttons.cancel')</a>
+            <a class="btn btn-sm btn-secondary" href="@yield('link_cancel')" style="color:white"><i class="fas fa-ban"></i> Cancelar</a>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -25,7 +24,6 @@
             $('.cep').mask('99999-999');
             $('.phone').mask('9999-9999');
             $('.phone_with_ddd').mask('(99) 9999-9999');
-            $('.number').mask('9999999999');
             $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
             $('.money').mask('000.000.000.000.000,00', {reverse: true});
             $('.ip_address').mask('099.099.099.099');

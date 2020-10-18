@@ -19,9 +19,7 @@
         "laravelcollective/html": "^6.2",
         "laravellegends/pt-br-validator": "^7.0",
         "lucascudo/laravel-pt-br-localization": "^1.1",
-        "realrashid/sweet-alert": "^3.1",
-        "yajra/laravel-datatables-oracle": "~9.0",
-        "yajra/laravel-oci8": "8"
+        "realrashid/sweet-alert": "^3.1"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
