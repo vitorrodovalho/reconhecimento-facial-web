@@ -58,9 +58,9 @@
 
         </div>
         @if(!isset($usuario))
-            <button class="btn btn-sm btn-primary"><i class="fas fa-save"></i> Adicionar Usuário</button>
+            <button class="btn btn-primary">Adicionar Usuário</button>
         @else
-            <button class="btn btn-sm btn-primary"><i class="fas fa-save"></i> Editar Usuário</button>
+            <button class="btn btn-primary">Editar Usuário</button>
         @endif
     </form>
 @endsection

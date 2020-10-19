@@ -5,7 +5,7 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <a class="btn btn-sm btn-secondary" href="@yield('link_cancel')" style="color:white"><i class="fas fa-ban"></i> Cancelar</a>
+            <a class="btn btn-secondary" href="@yield('link_cancel')" style="color:white">Cancelar</a>
         </div>
         <!-- /.card-header -->
         <div class="card-body">

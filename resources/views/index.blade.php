@@ -6,7 +6,7 @@
     <div class="card">
         <div class="card-header">
             <div class="btn-group">
-                <a href="@yield('link')/create" class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Adicionar</a></div>
+                <a href="@yield('link')/create" class="btn btn-primary">Adicionar</a></div>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -16,9 +16,9 @@
                         Swal.fire({
                             title: "Sucesso!",
                             @if($message == 'success')
-                                text: "Usuário incluído com sucesso.",
+                                text: "Registro incluído com sucesso.",
                             @elseif($message == 'success_edit')
-                                text: "Usuário editado com sucesso.",
+                                text: "Registro editado com sucesso.",
                             @endif
                             type: "success",
                             showConfirmButton: false,
@@ -32,7 +32,7 @@
                     <script>
                         Swal.fire({
                             title: "Erro!",
-                            text: "Erro ao inserir usuário. ({{$error}})",
+                            text: "Erro ao inserir registro. ({{$error}})",
                             type: "error",
                             showConfirmButton: false,
                             timer: 2000
@@ -56,10 +56,6 @@
         bottom: 0.55em !important;
     }
 
-    .dt-buttons.btn-group.flex-wrap {
-        position: absolute;
-    }
-
     .swal2-container .swal2-styled {
         padding: .25rem .5rem;
     }
@@ -73,6 +69,10 @@
         border-color: #007bff !important;
     }
 
+    .dt-buttons {
+        display: none!important;
+    }
+
     form {
         margin-block-end: 0px !important;
     }
@@ -82,49 +82,12 @@
     <script>
         $('#tbl_data').DataTable({
             dom: 'Bfrtip',
-            buttons: [
-                {
-                    extend: "csv",
-                    className: "btn-sm btn-outline-secondary",
-                    titleAttr: 'Export in CSV',
-                    text: 'CSV',
-                    init: function (api, node, config) {
-                        $(node).removeClass('btn-secondary')
-                    }
-                },
-                {
-                    extend: "excel",
-                    className: "btn-sm btn-outline-secondary",
-                    titleAttr: 'Export in Excel',
-                    text: 'Excel',
-                    init: function (api, node, config) {
-                        $(node).removeClass('btn-secondary')
-                    }
-                },
-                {
-                    extend: "pdf",
-                    className: "btn-sm btn-outline-secondary",
-                    titleAttr: 'Export in PDF',
-                    text: 'PDF',
-                    init: function (api, node, config) {
-                        $(node).removeClass('btn-secondary')
-                    }
-                },
-                {
-                    extend: "print",
-                    className: "btn-sm btn-outline-secondary",
-                    titleAttr: 'Export in Print',
-                    text: 'Print',
-                    init: function (api, node, config) {
-                        $(node).removeClass('btn-secondary')
-                    }
-                },
-            ],
+            buttons: false,
             "paging": true,
             "pageLength": 20,
             "lengthChange": true,
             "searching": true,
-            "ordering": false,
+            "ordering": true,
             "info": true,
             "autoWidth": true,
             "responsive": true,
@@ -151,13 +114,6 @@
             "drawCallback": function () {
                 $('.dataTables_paginate > .pagination').addClass('pagination-sm');
             },
-            initComplete: function () {
-                $('.buttons-copy').html('<i class="fas fa-copy" /> Copiar')
-                $('.buttons-csv').html('<i class="fas fa-file-csv" /> CSV')
-                $('.buttons-excel').html('<i class="fa fa-file-excel" /> Exel')
-                $('.buttons-pdf').html('<i class="fa fa-file-pdf" /> PDF')
-                $('.buttons-print').html('<i class="fa fa-print" /> Imprimir')
-            }
         });
 
         function deleteConfirmation(id, name) {
@@ -181,7 +137,7 @@
                             if (results.success === true) {
                                 Swal.fire({
                                     title: "Sucesso",
-                                    text: "Usuário excluído com sucesso!",
+                                    text: "Registro excluído com sucesso!",
                                     type: "success",
                                     showConfirmButton: false,
                                     timer: 2000
@@ -192,7 +148,7 @@
                             } else {
                                 Swal.fire({
                                     title: "Erro",
-                                    text: "Erro ao excluir usuário",
+                                    text: "Erro ao excluir registro",
                                     type: "error",
                                 });
                             }

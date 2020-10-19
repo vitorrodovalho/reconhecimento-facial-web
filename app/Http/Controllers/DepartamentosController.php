@@ -9,9 +9,9 @@ class DepartamentosController extends Controller
 {
     public function index(Request $request)
     {
-        $departametnos = Departamento::all()->sortByDesc('id');
+        $departamentos = Departamento::all()->sortByDesc('id');
         $message = $request->session()->get('message');
-        return view('departamentos.index', compact('departametnos', 'message'));
+        return view('departamentos.index', compact('departamentos', 'message'));
     }
 
     public function create()

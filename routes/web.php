@@ -19,5 +19,8 @@ Route::get('/home', function () { return view('dashboard'); });
 Route::group(['namespace' => '\App\Http\Controllers'], function() {
     Route::resources([
         'usuarios' => UsuariosController::class,
+        'departamentos' => DepartamentosController::class,
+        'turnos' => TurnosController::class,
+        '/' => DashboardController::class,
     ]);
 });
