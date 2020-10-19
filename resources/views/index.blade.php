@@ -5,7 +5,7 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <div class="btn-group">
+            <div class="btn-group btn-adicionar">
                 <a href="@yield('link')/create" class="btn btn-primary">Adicionar</a></div>
         </div>
         <!-- /.card-header -->

@@ -22,5 +22,7 @@ Route::group(['namespace' => '\App\Http\Controllers'], function() {
         'departamentos' => DepartamentosController::class,
         'turnos' => TurnosController::class,
         '/' => DashboardController::class,
+        '/home' => DashboardController::class,
+        'movimentacoes' => MovimentacaoController::class,
     ]);
 });

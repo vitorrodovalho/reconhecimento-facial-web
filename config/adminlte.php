@@ -45,13 +45,13 @@ return [
     |
     */
 
-    'logo' => '<b>Reconhecimento</b> Facial',
-    'logo_img' => 'vendor/adminlte/dist/img/viaonda.png',
+    'logo' => '<b>Control.</b> Acesso',
+    'logo_img' => 'vendor/adminlte/dist/img/logo.png',
     //'logo_img' => 'resources/img/viaonda.png',
     'logo_img_class' => 'brand-image',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'ViaOnda',
+    'logo_img_alt' => 'Contr. Acesso',
 
     /*
     |--------------------------------------------------------------------------
@@ -260,7 +260,7 @@ return [
         ],
         [
             'text'  => 'Movimentação',
-            'url'   => 'movimentacao',
+            'url'   => 'movimentacoes',
             'icon'  => 'fas fa-chart-line',
         ],
     ],

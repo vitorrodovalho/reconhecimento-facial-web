@@ -23,19 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbb07007-3a2e-454b-b574-ce9d9b57879c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MovimentacaoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Movimentacao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/departamentos/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/departamentos/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/turnos/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/turnos/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartamentosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartamentosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/usuarios/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usuarios/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/movimentacoes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/movimentacoes/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +181,7 @@
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -209,9 +201,9 @@
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\resources\views" />
       <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\app\Http\Controllers" />
       <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\app\Models" />
-      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\resources\views" />
       <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\database\migrations" />
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources\lang\pt-br" />
     </key>
@@ -258,7 +250,7 @@
       <workItem from="1602694724726" duration="3987000" />
       <workItem from="1602771853987" duration="1686000" />
       <workItem from="1602779950167" duration="3376000" />
-      <workItem from="1603032339847" duration="10842000" />
+      <workItem from="1603032339847" duration="11879000" />
     </task>
     <servers />
   </component>
