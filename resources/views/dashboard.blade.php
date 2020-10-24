@@ -42,6 +42,9 @@
     <div class="row">
         <div class="col-6">
             <div class="card">
+                <div class="card-header">
+                    Movimentações Mensal
+                </div>
                 <div class="card-body">
                     <div class="chart">
                         <canvas id="chartjs-mes" class="chartjs" width="770" height="385"
