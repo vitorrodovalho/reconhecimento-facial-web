@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 @section('plugins.Datatables', true)
-@section('plugins.Chartjs', true)
+@section('plugins.Chartjs', false)
 
 @section('title', 'Dashboard')
 
@@ -95,24 +95,49 @@
     table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after {
         bottom: 0.55em !important;
     }
+
+    .dt-buttons {
+        display: none!important;
+    }
 </style>
 
 @section('js')
 <script>
-    new Chart(document.getElementById("chartjs-mes"), {
-        "type": "bar",
-        "data": {
-            "labels": ["January", "February", "March", "April", "May", "June", "July"],
-            "datasets": [{
-                "label": "My First Dataset",
-                "data": [65, 59, 80, 81, 56, 55, 40],
-                "fill": false,
-                "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
-                "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
-                "borderWidth": 1
-            }]
+    $('#tbl_data').DataTable({
+        dom: 'Bfrtip',
+        buttons: false,
+        "paging": true,
+        "pageLength": 20,
+        "lengthChange": true,
+        "searching": false,
+        "order": [ 0, "desc" ],
+        //"ordering": true,
+        "info": true,
+        "autoWidth": true,
+        "responsive": true,
+        "deferRender": false,
+        "language": {
+            "sEmptyTable": "Nenhum registro encontrado",
+            "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando 0 até 0 de 0 registros",
+            "sInfoFiltered": "(Filtrados de _MAX_ registros)",
+            "sInfoPostFix": "",
+            "sInfoThousands": ".",
+            "sLengthMenu": "_MENU_ resultados por página",
+            "sLoadingRecords": "Carregando...",
+            "sProcessing": "Processando...",
+            "sZeroRecords": "Nenhum registro encontrado",
+            "sSearch": "Pesquisar: ",
+            "oPaginate": {
+                "sNext": "Próximo",
+                "sPrevious": "Anterior",
+                "sFirst": "Primeiro",
+                "sLast": "Último"
+            }
         },
-        "options": {"scales": {"yAxes": [{"ticks": {"beginAtZero": true}}]}}
+        "drawCallback": function () {
+            $('.dataTables_paginate > .pagination').addClass('pagination-sm');
+        },
     });
 </script>
 @stop
