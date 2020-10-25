@@ -11,6 +11,12 @@ class DashboardController extends Controller
     public function index(Request $request)
     {
         $movimentacoes = Movimentacao::all()->sortByDesc('id');
-        return view('dashboard', compact('movimentacoes'));
+        $qtd_acessos_autorizados = Movimentacao::all()
+                                                ->where('cod_usuario', '<>', 'Desconhecido')
+                                                ->count();
+        $qtd_acessos_nao_autorizados = Movimentacao::all()
+                                                    ->where('cod_usuario', '=', 'Desconhecido')
+                                                    ->count();
+        return view('dashboard', compact('movimentacoes', 'qtd_acessos_autorizados', 'qtd_acessos_nao_autorizados'));
     }
 }

@@ -14,7 +14,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
                 <div class="inner">
-                    <h3>53</h3>
+                    <h3>{{ $qtd_acessos_autorizados }}</h3>
                     <p>Acessos Autorizados</p>
                 </div>
                 <div class="icon">
@@ -28,7 +28,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
                 <div class="inner">
-                    <h3>65</h3>
+                    <h3>{{ $qtd_acessos_nao_autorizados }}</h3>
                     <p>Acessos Não Autorizados</p>
                 </div>
                 <div class="icon">
@@ -40,6 +40,7 @@
         <!-- ./col -->
     </div>
     <div class="row">
+        <!--
         <div class="col-6">
             <div class="card">
                 <div class="card-header">
@@ -52,7 +53,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> !-->
         <div class="col-6">
             <div class="card">
                 <div class="card-header">
