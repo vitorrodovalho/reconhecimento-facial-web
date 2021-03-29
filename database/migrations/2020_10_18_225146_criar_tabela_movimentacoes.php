@@ -10,7 +10,7 @@ class CriarTabelaMovimentacoes extends Migration
     {
         Schema::create('movimentacoes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('cod_usuario');
+            $table->string('cod_usuario', 45);
             $table->dateTime('data');
             $table->foreign('cod_usuario')->references('codigo')->on('usuarios');
         });
