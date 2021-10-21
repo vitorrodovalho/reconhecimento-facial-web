@@ -23,8 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbb07007-3a2e-454b-b574-ce9d9b57879c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/MovimentacaoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +178,7 @@
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/api" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -189,19 +190,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/api" />
+      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\resources\views" />
+      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\app\Http\Controllers" />
+      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\app\Models" />
+      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\database\migrations" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\app\Models" />
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources\lang\pt-br" />
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\public\vendor\adminlte\dist\img" />
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources\img" />
       <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\resources\views" />
-      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\app\Http\Controllers" />
-      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\app\Models" />
-      <recent name="C:\Users\User\Desktop\UNIP\reconhecimento-facial-web\database\migrations" />
-      <recent name="C:\Users\User\Documents\Projetos\ViaOnda\viaondaweb\resources\lang\pt-br" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.CompaniesController.php">
@@ -249,6 +250,7 @@
       <workItem from="1603032339847" duration="12586000" />
       <workItem from="1603550396223" duration="636000" />
       <workItem from="1603652511449" duration="1589000" />
+      <workItem from="1634700519555" duration="71976000" />
     </task>
     <servers />
   </component>
@@ -271,55 +273,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="586" y="203" key="#Inspections" timestamp="1602010281948">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="824" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1634701291333">
+      <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="586" y="203" key="#Inspections/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1602010281948" />
-    <state x="667" y="168" key="#PHP" timestamp="1601495984310">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="667" y="168" key="#PHP/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1601495984310" />
-    <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601666647931">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1601666647931" />
-    <state x="739" y="230" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1601646752351">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="739" y="230" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1601646752351" />
-    <state x="705" y="290" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602255436782">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="705" y="290" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1602255436782" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602096519484">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1602096519484" />
-    <state x="718" y="248" key="NewPhpClassDialog" timestamp="1601995036709">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="718" y="248" key="NewPhpClassDialog/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1601995036709" />
-    <state x="263" y="113" width="998" height="708" key="SettingsEditor" timestamp="1603036235641">
-      <screen x="0" y="0" width="2560" height="1050" />
-    </state>
-    <state x="617" y="140" width="998" height="708" key="SettingsEditor/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1602184553597" />
-    <state x="263" y="113" key="SettingsEditor/0.0.2560.1050@0.0.2560.1050" timestamp="1603036235641" />
-    <state x="-1508" y="34" width="1514" height="1037" maximized="true" key="dock-window-1" timestamp="1601637532213">
-      <screen x="-1680" y="34" width="1680" height="1020" />
-    </state>
-    <state x="-1508" y="34" width="1514" height="1037" maximized="true" key="dock-window-1/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1601637532213" />
-    <state x="564" y="230" width="585" height="534" key="find.popup" timestamp="1601990806971">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="564" y="230" width="585" height="534" key="find.popup/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1601990806971" />
-    <state x="616" y="243" key="run.anything.popup" timestamp="1601988945575">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1601988945575" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602183265955">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1680.34.1680.1020@0.0.1920.1050" timestamp="1602183265955" />
+    <state x="824" y="350" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1080@0.0.2560.1080" timestamp="1634701291333" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
