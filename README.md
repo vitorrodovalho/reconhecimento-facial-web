@@ -1,7 +1,6 @@
 ## Sobre
 
 Sistema de gerenciamento de acesso por reconhecimento facial
-- Linguages: PHP, JavaScript.
-- Marcação: HTML, Blade e CSS.
+- Linguages: PHP, JavaScript, Blade e CSS.
 - Frameworks: Laravel, Bootstrap, jQuery e Lumen.
 - Banco de Dados: MariaDB.
